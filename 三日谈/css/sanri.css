@@ -1,0 +1,157 @@
+*{
+	padding: 0;
+	margin:0;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+
+
+/*顶部标题*/
+.top{
+	height: 44%;
+	width: 100%;
+	position: relative;
+}
+.word1{
+	width: 40%;
+	height: 20%:;
+	position: absolute;
+	left: 31%;
+	bottom: 48%;
+	font-size: 500%;
+	color: white;
+	text-align: center;
+}
+.word2{
+	width: 8%;
+	height: 5%;
+	position: absolute;
+	left: 46%;
+	bottom: 28%;
+	font-size: 155%;
+	color: white;
+	font-family: 宋体;
+}
+
+
+
+/*第一段*/
+.ta{
+	width: 49%;
+	height: 35%;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 25%;
+	bottom: 5%;
+}
+
+
+/*第一日*/
+.di1{
+	position: relative;
+}
+.diyiri{
+	width: 10%;
+	height: 6%;
+	font-weight: bold;
+	position: absolute;
+	font-size: 140%;
+	left: 45%;
+	bottom: 96%;
+}
+.yi{
+	width: 50%;
+	height: 60%:;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 25%;
+	bottom: 47%;
+}
+.wo{
+	width: 35%;
+	height: 35%;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 25%;
+	bottom: 8%;
+}
+
+
+
+/*第二日*/
+.di2{
+	position: relative;
+}
+.dierri{
+	width: 10%;
+	height: 6%;	
+	font-weight: bold;
+	position: absolute;
+	font-size: 140%;
+	left: 45%;
+	bottom: 96%;
+}
+.yin{
+	width: 50%;
+	height: 35%;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 25%;
+	bottom: 58%;
+}
+.jian{
+	width: 24%;
+	height: 50%;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 51%;
+	bottom: 5%;
+	font-size: 100%;
+}
+.le{
+	width: 50%;
+	height: 6%;
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+	left: 25%;
+	bottom: 1%;
+	font-size: 100%;
+}
+
+/*第三日*/
+.di3{
+	position: relative;
+}
+.disanri{
+	width: 10%;
+	height: 6%;	
+	font-weight: bold;
+	position: absolute;
+	font-size: 140%;
+	left: 45%;
+	bottom: 87%;
+}
+.wogang{
+	width:50%;
+	height:40%;	
+	font-family: 宋体;
+	font-weight: bold;
+	line-height: 30px;
+	position: absolute;
+	left: 25%;
+	bottom: 1%;
+}
