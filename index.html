@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*必须，关系到单个page能否全屏显示*/
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+        #container,
+        .sections,
+        .section {
+         /*必须，兼容，在浏览器不支持transform属性时，通过改变top/left完成滑动动画*/
+            position: relative;
+         /*必须，关系到单个page能否全屏显示*/
+            height: 100%;
+        }
+
+
+
+        .section {
+            background-color: #000;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+
+        /*四个背景图*/
+        #section0 {
+            background-image: url(img/img1.png);
+        }
+        #section1 {
+            background-image: url(img/img2.png);
+        }
+        #section2 {
+            background-image: url(img/img3.png);
+        }
+        #section3 {
+            background-image: url(img/img4.png);
+        }
+
+
+        /*右边四个点*/
+        .pages {
+            position:fixed;
+            right: 10px;
+            top: 50%;
+            list-style: none;
+        }
+        .pages li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 15px 0 0 7px;
+        }
+        .pages li.active {
+            margin-left: 0;
+            width: 14px;
+            height: 14px;
+            border: 4px solid #FFFFFF;
+            background: none;
+        }
+
+
+       /* 开始旅程页面*/
+        #section0{
+        	position: relative;
+        }
+        .start{
+			color: white;
+			height: 6%;
+			width: 14%;
+			border-radius: 50px;
+			font-size: 200%;
+			text-align: center;
+			position: absolute;
+			margin-left: 43%;
+			top: 75%;
+			padding-top: 1%;
+		}
+
+		/*.start:hover{
+			background-color: rgba(210,208,202,0.5);
+		}*/
+
+		/*水润花开晚会页面*/
+		#section1{
+        	position: relative;
+        }
+        .wanhui>a{
+			color: black;
+			height: 8%;
+			width: 16%;
+			font-size: 200%;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			position: absolute;
+			margin-left: 42%;
+			top: 78%;
+			padding-top: 1%;
+		}
+
+		/*三日谈页面*/
+		#section2{
+        	position: relative;
+        }
+        .sanri>a{
+			color: black;
+			height: 8%;
+			width: 16%;
+			font-size: 200%;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			position: absolute;
+			margin-left: 42%;
+			top: 80%;
+		}
+
+		/*知名校友页面*/
+		#section3{
+        	position: relative;
+        }
+        .xiaoyou>a{
+			color: black;
+			height: 8%;
+			width: 16%;
+			font-size: 200%;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			position: absolute;
+			margin-left: 42%;
+			top: 80%;
+			padding-top: 1%;
+		}
+
+
+		/*西大时间轴*/
+        .time{
+             width:20px;
+             line-height:35px;
+             position: absolute;
+             margin-left: 80%;
+             top: 60%;
+             font-size: 150%;
+             display: block;
+        }
+        .time>a{
+             text-decoration: none;
+             color: #0099ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" data-XSwitch>
+        <div class="sections">
+            <div class="section" id="section0">
+                 <div class="start">开始旅程</div>
+            </div>
+            <div class="section" id="section1">
+                 <div class="wanhui"><a href="wanhui/wanhui.html
+">"水润花开"<br>校庆晚会</a></div>
+                 <div class="time"><a href="time.html
+">——西大时间轴</a></div>
+             </div>
+            <div class="section" id="section2">
+                 <div class="sanri"><a href="SANRI.html
+">【校庆】<br>三日谈</a></div>
+                 <div class="time"><a href="time.html
+">——西大时间轴</a></div>
+             </div>
+            <div class="section" id="section3">
+                 <div class="xiaoyou"><a href="xiaoyou/xiaoyou.html
+">知名校友</a></div>
+                 <div class="time"><a href="time.html
+">——西大时间轴</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script src="js/XSwitch-min.js" charset="utf-8"></script>
+</body>
+</html>
